@@ -62,7 +62,6 @@ stages:
     - task: KubernetesManifest@1
       inputs:
         action: 'deploy'
-        connectionType: 'kubernetesServiceConnection'
         kubernetesServiceConnection: 'Kubernetes_connect'
         manifests: 
            $(Build.SourcesDirectory)/sqlapp/sqlapp/Manifests/app.yml
