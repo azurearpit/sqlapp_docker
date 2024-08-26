@@ -59,10 +59,8 @@ stages:
           $(tag)
           latest
     
-    - task: KubernetesManifest@1
+    - task: PublishPipelineArtifact@1
       inputs:
-        action: 'deploy'
-        kubernetesServiceConnection: 'Kubernetes_connect'
-        manifests: | 
-           $(Build.SourcesDirectory)/sqlapp/sqlapp/Manifests/app.yml
-           $(Build.SourcesDirectory)/sqlapp/sqlapp/Manifests/service.yml
+        targetPath: '$(Pipeline.Workspace)'
+        artifact: 'sourcefiles'
+        publishLocation: 'pipeline'
