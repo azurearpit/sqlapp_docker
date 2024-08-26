@@ -65,5 +65,5 @@ stages:
         connectionType: 'kubernetesServiceConnection'
         kubernetesServiceConnection: 'Kubernetes_connect'
         manifests: 
-          $(Build.ArtifactStagingDirectory)/sqlapp/sqlapp/Manifests/app.yml
-          $(Build.ArtifactStagingDirectory)/sqlapp/sqlapp/Manifests/service.yml
+          $(Build.ArtifactStagingDirectory)/sqlapp/Manifests/app.yml
+          $(Build.ArtifactStagingDirectory)/sqlapp/Manifests/service.yml
