@@ -63,6 +63,6 @@ stages:
       inputs:
         action: 'deploy'
         kubernetesServiceConnection: 'Kubernetes_connect'
-        manifests: 
+        manifests: | 
            $(Build.SourcesDirectory)/sqlapp/sqlapp/Manifests/app.yml
            $(Build.SourcesDirectory)/sqlapp/sqlapp/Manifests/service.yml
