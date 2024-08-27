@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '69eb6d23-15c3-491e-8867-6c8bce67bf00'
   imageRepository: 'sqlappdocker'
   containerRegistry: 'localregistry0001.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/sqlapp/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/sqlapp/sqlapp'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
